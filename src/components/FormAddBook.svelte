@@ -1,5 +1,4 @@
 <script lang="ts">
-    // Déclaration des variables
     let title: string = "";
     let author: string = "";
     let description: string = "";
@@ -47,7 +46,7 @@
     <input type="text" bind:value={description} placeholder="Description du livre" />
     <input type="text" bind:value={publicationDate} placeholder="Date de publication du livre" required />
 
-    <button type="submit">Ajouter</button>
+    <button type="submit">Ajouter un livre</button>
 </form>
 
 <p>{message}</p>
@@ -99,7 +98,6 @@
         color: white;
         background: #ae00ff;
         border: none;
-        border-radius: 5px;
         cursor: pointer;
         transition: background 0.3s ease-in-out;
     }
